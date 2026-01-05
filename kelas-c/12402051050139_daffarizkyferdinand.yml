@@ -1,0 +1,499 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\jeje1
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 857
+    content: "\e[?9001h\e[?1004h"
+  - delay: 94
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 143
+    content: 'PS C:\Users\jeje1> '
+  - delay: 850
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93mm\e[?25h"
+  - delay: 412
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 484
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;20Hmys\e[?25h"
+  - delay: 145
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;20Hmysq\e[?25h"
+  - delay: 783
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;20Hmysql\e[?25h"
+  - delay: 3627
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;20Hmysql \e[?25h"
+  - delay: 1770
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;20Hmysql \e[37m-\e[?25h"
+  - delay: 391
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;20Hmysql \e[90m-u\e[?25h"
+  - delay: 825
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[?25h"
+  - delay: 405
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 178
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 114
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 199
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 495
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 441
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 298
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 810
+    content: "\e[m"
+  - delay: 18
+    content: "\r\n"
+  - delay: 28
+    content: E
+  - delay: 19
+    content: 'nter password: '
+  - delay: 813
+    content: '*'
+  - delay: 166
+    content: '*'
+  - delay: 150
+    content: '*'
+  - delay: 115
+    content: '*'
+  - delay: 514
+    content: '*'
+  - delay: 164
+    content: '*'
+  - delay: 76
+    content: '*'
+  - delay: 321
+    content: '*'
+  - delay: 184
+    content: '*'
+  - delay: 151
+    content: "\r\n"
+  - delay: 46
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 11
+    content: "\e[?25l\r\nYour MariaDB connection id is 18\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 17090
+    content: "CREATE DATABASE laporan_keuangan;\r\n"
+  - delay: 19
+    content: "ERROR 1007 (HY000): Can't create database 'laporan_keuangan'; database exists\r\nMariaDB [(none)]> USE laporan_keuangan;\r\nDatabase changed\r\nMariaDB [laporan_keuangan]> "
+  - delay: 19297
+    content: "Ctrl-C -- exit!\r\n"
+  - delay: 16
+    content: "Bye\r\n"
+  - delay: 16
+    content: 'PS C:\Users\jeje1> '
+  - delay: 6549
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93mmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 1027
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[22;20H\e[16X\e[?25h"
+  - delay: 960
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93mmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 293
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[91m\e[22;18H> \e[93mINSERT \e[37mINTO transaksi (\e[93mid_departemen\e[90m, \e[37mid_kategori\e[90m, \e[37mid_akun\e[90m, \e[37mtanggal_transaksi\e[90m, \e[37mdeskripsi\e[90m, \e[37mjumlah\e[90m, \e[37mstatus) VALUES \e[?25h"
+  - delay: 444
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[22;18H> \e[37m(\e[36m'Kas Utama'\e[90m, \e[36m'ACC-001'\e[90m, \e[97m50000000.00\e[90m, \e[36m'2024-01-01'\e[37m)\e[90m,\e[K\e[37m\r\n>> (\e[36m'Bank Mandiri'\e[90m, \e[36m'ACC-002'\e[90m, \e[97m75000000.00\e[90m, \e[36m'2024-01-01'\e[37m);\e[?25h"
+  - delay: 229
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[91m\e[22;18H> \e[93mINSERT \e[37mINTO akun_keuangan (\e[93mnama_akun\e[90m, \e[37mnomor_akun\e[90m, \e[37msaldo\e[90m, \e[37mtanggal_buat) VALUES \e[m\r\n\e[58X\e[22;98H\e[?25h"
+  - delay: 400
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[22;18H> \e[37m(\e[36m'Gaji Karyawan'\e[90m, \e[36m'pengeluaran'\e[37m)\e[90m,\e[45X\e[37m\r\n>> (\e[36m'Penjualan Produk'\e[90m, \e[36m'pemasukan'\e[37m);\e[?25h"
+  - delay: 473
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[91m\e[22;18H> \e[93mINSERT \e[37mINTO kategori_transaksi (\e[93mnama_kategori\e[90m, \e[37mjenis) VALUES \e[m\r\n\e[37X\e[22;81H\e[?25h"
+  - delay: 576
+    content: "\e[?25l"
+  - delay: 16
+    content: "\e[22;18H> \e[37m(\e[36m'Keuangan'\e[90m, \e[36m'FIN01'\e[37m)\e[90m,\e[39X\e[37m\r\n>> (\e[36m'Operasional'\e[90m, \e[36m'OPS01'\e[37m);\e[?25h"
+  - delay: 594
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[91m\e[22;18H> \e[93mINSERT \e[37mINTO kategori_transaksi (\e[93mnama_kategori\e[90m, \e[37mjenis) VALUES \e[m\r\n\e[28X\e[22;81H\e[?25h"
+  - delay: 391
+    content: "\e[?25l"
+  - delay: 16
+    content: "\e[22;18H> \e[37m(\e[36m'Gaji Karyawan'\e[90m, \e[36m'pengeluaran'\e[37m)\e[90m,\e[28X\e[37m\r\n>> (\e[36m'Penjualan Produk'\e[90m, \e[36m'pemasukan'\e[37m);\e[?25h"
+  - delay: 307
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[91m\e[22;18H> \e[93mINSERT \e[37mINTO akun_keuangan (\e[93mnama_akun\e[90m, \e[37mnomor_akun\e[90m, \e[37msaldo\e[90m, \e[37mtanggal_buat) VALUES \e[m\r\n\e[37X\e[22;98H\e[?25h"
+  - delay: 149
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[22;18H> \e[37m(\e[36m'Kas Utama'\e[90m, \e[36m'ACC-001'\e[90m, \e[97m50000000.00\e[90m, \e[36m'2024-01-01'\e[37m)\e[90m,\e[26X\e[37m\r\n>> (\e[36m'Bank Mandiri'\e[90m, \e[36m'ACC-002'\e[90m, \e[97m75000000.00\e[90m, \e[36m'2024-01-01'\e[37m);\e[?25h"
+  - delay: 184
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[91m\e[22;18H> \e[93mINSERT \e[37mINTO transaksi (\e[93mid_departemen\e[90m, \e[37mid_kategori\e[90m, \e[37mid_akun\e[90m, \e[37mtanggal_transaksi\e[90m, \e[37mdeskripsi\e[90m, \e[37mjumlah\e[90m, \e[37mstatus) VALUES\e[47X\e[1C\e[?25h"
+  - delay: 190
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[22;18H> \e[93mmysql \e[90m-u \e[37mroot \e[90m-p                                                                                     \e[m\r\n\e[12X\e[22;36H\e[?25h"
+  - delay: 184
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[22;20H\e[16X\e[?25h"
+  - delay: 13510
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[91m^C\e[m\r\nPS C:\\Users\\jeje1> \e[?25h"
+  - delay: 5954
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93mCR\e[?25h"
+  - delay: 16
+    content: "\e[?25l\e[m\e[93m\e[23;20HCREATE \e[37mDATABASE laporan_keuangan;\r\n\e[?25h"
+  - delay: 169
+    content: "\e[m\e[38;5;9mCREATE : The term 'CREATE' is not recognized as the name of a cmdlet, function, script file, or operable program. \e[m\e[38;5;9m\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:1 char:1\r\n+ CREATE DATABASE laporan_keuangan;\r\n+ ~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (CREATE:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 13
+    content: "\e[m\r\n"
+  - delay: 14
+    content: "PS C:\\Users\\jeje1> \e[93mUSE \e[37mlaporan_keuangan;\e[m\r\n"
+  - delay: 60
+    content: "\e[38;5;9mUSE : The term 'USE' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+ USE laporan_keuangan;\e[m\r\n\e[38;5;9m+ ~~~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (USE:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 15
+    content: "\e[m\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 8868
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93mm\e[?25h"
+  - delay: 187
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\bma\e[?25h"
+  - delay: 670
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[30;20Hm \b\e[?25h"
+  - delay: 144
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\b \b\e[?25h"
+  - delay: 723
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93mm\e[?25h"
+  - delay: 310
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 964
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[30;20Hmys\e[?25h"
+  - delay: 163
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[30;20Hmysq\e[?25h"
+  - delay: 214
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[30;20Hmysql\e[?25h"
+  - delay: 810
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[30;20Hmysql \e[?25h"
+  - delay: 1330
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[30;20Hmysql \e[37m-\e[?25h"
+  - delay: 369
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[30;20Hmysql \e[90m-u\e[?25h"
+  - delay: 914
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[?25h"
+  - delay: 165
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 178
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 118
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 116
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 202
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 1353
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 298
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[30;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 802
+    content: "\e[m"
+  - delay: 13
+    content: "\r\n"
+  - delay: 25
+    content: E
+  - delay: 21
+    content: 'nter password: '
+  - delay: 1030
+    content: '*'
+  - delay: 151
+    content: '*'
+  - delay: 136
+    content: '*'
+  - delay: 94
+    content: '*'
+  - delay: 371
+    content: '*'
+  - delay: 120
+    content: '*'
+  - delay: 95
+    content: '*'
+  - delay: 742
+    content: '*'
+  - delay: 224
+    content: '*'
+  - delay: 267
+    content: "\r\n"
+  - delay: 44
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\r\nYour MariaDB connection id is 19\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\r\n\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n"
+  - delay: 14
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 4753
+    content: "CREATE DATABASE laporan_keuangan;\r\nERROR 1007 (HY000): Can't create database 'laporan_keuangan'; database exists\r\nMariaDB [(none)]> USE laporan_keuangan;\r\nDatabase changed"
+  - delay: 15
+    content: "\r\nMariaDB [laporan_keuangan]>\e[1C"
+  - delay: 9807
+    content: "CREATE TABLE pengguna (\r\n    ->     id_pengguna INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama VARCHAR(100) NOT NULL,\r\n    ->     email VARCHAR(100) UNIQUE,\r\n    ->     role ENUM('admin','staff') NOT NULL,\r\n    ->     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\r\n    -> );\r"
+  - delay: 9
+    content: "\nQuery OK, 0 rows affected (0.009 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [laporan_keuangan]>\e[1C"
+  - delay: 13650
+    content: "CREATE TABLE akun (\r\n    ->     id_akun INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_akun VARCHAR(100) NOT NULL,\r\n    ->     jenis_akun ENUM('aset','kewajiban','modal','pendapatan','beban') NOT NULL\r\n    -> );\r"
+  - delay: 6
+    content: "\nQuery OK, 0 rows affected (0.007 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [laporan_keuangan]>\e[1C"
+  - delay: 11393
+    content: "CREATE TABLE transaksi (\r\n    ->     id_transaksi INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     tanggal DATE NOT NULL,\r\n    ->     keterangan TEXT,\r\n    ->     jumlah DECIMAL(15,2) NOT NULL,\r\n    ->     tipe ENUM('debit','kredit') NOT NULL,\r\n    ->     id_akun INT,\r\n    ->     id_pengguna INT,\r\n    ->     FOREIGN KEY (id_akun) REFERENCES akun(id_akun),\r\n    ->     FOREIGN KEY (id_pengguna) REFERENCES pengguna(id_pengguna)\r\n    -> );\r\nERROR 1050 (42S01): Table 'transaksi' already exists"
+  - delay: 15
+    content: "\r\nMariaDB [laporan_keuangan]>\e[1C"
+  - delay: 24801
+    content: "INSERT INTO pengguna (nama, email, role) VALUES\r\n    -> ('Daffa Rizky', 'daffa@email.com', 'admin'),\r\n    -> ('Siti Aulia', 'siti@email.com', 'staff');\r\nQuery OK, 2 rows affected (0.005 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 10
+    content: "\nMariaDB [laporan_keuangan]>\e[1C"
+  - delay: 15672
+    content: "INSERT INTO akun (nama_akun, jenis_akun) VALUES\r\n    -> ('Kas', 'aset'),\r\n    -> ('Pendapatan Jasa', 'pendapatan');\r"
+  - delay: 7
+    content: "\nQuery OK, 2 rows affected (0.007 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 11
+    content: "\nMariaDB [laporan_keuangan]>\e[1C"
+  - delay: 10041
+    content: v
+  - delay: 877
+    content: "\b \b"
+  - delay: 2414
+    content: "INSERT INTO transaksi (tanggal, keterangan, jumlah, tipe, id_akun, id_pengguna) VALUES\r\n    -> ('2026-01-01', 'Penerimaan jasa layanan', 1500000.00, 'debit', 1, 1),\r\n    -> ('2026-01-02', 'Pendapatan jasa perpustakaan', 1500000.00, 'kredit', 2, 2);\r\nERROR 1054 (42S22): Unknown column 'tanggal' in 'INSERT INTO'"
+  - delay: 13
+    content: "\r\nMariaDB [laporan_keuangan]>\e[1C"
+  - delay: 13930
+    content: e
+  - delay: 295
+    content: x
+  - delay: 386
+    content: t
+  - delay: 729
+    content: "\b \b"
+  - delay: 632
+    content: i
+  - delay: 166
+    content: t
+  - delay: 2220
+    content: ;
+  - delay: 1040
+    content: "\r\nBye"
+  - delay: 14
+    content: "\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 1750
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93me\e[?25h"
+  - delay: 200
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\bex\e[?25h"
+  - delay: 255
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[30;20Hexi\e[?25h"
+  - delay: 213
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[92m\e[30;20Hexit\e[?25h"
+  - delay: 938
+    content: "\e[m"
+  - delay: 11
+    content: "\r\n"
